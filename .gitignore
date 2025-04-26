@@ -1,0 +1,56 @@
+# .gitignore for OptionLab Ruby gem
+
+# Ruby specific
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Documentation
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+# Environment normalization
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
+# RSpec
+.rspec_status
+
+# Specific to RubyMine IDE
+/.idea/
+
+# Environment settings
+.env
+.env.*
+
+# Claude
+CLAUDE.md
+
+# Lock files
+Gemfile.lock
+
+# Directory for generated data
+/data/
+*.csv
+
+# Log files
+*.log
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini

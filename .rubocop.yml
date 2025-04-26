@@ -1,0 +1,139 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 3.3
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'spec/spec_helper.rb'
+    - 'tmp/**/*'
+
+# General style settings
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+  Enabled: true
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: single_quotes
+  Enabled: true
+
+# Documentation is important for a library
+Style/Documentation:
+  Enabled: true
+
+# Use modern Ruby features
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+# Method length and complexity
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/CyclomaticComplexity:
+  Max: 15
+
+Metrics/PerceivedComplexity:
+  Max: 15
+
+Metrics/ParameterLists:
+  Max: 8
+
+# Class and module length
+Metrics/ClassLength:
+  Max: 300
+
+Metrics/ModuleLength:
+  Max: 300
+
+# Line length
+Layout/LineLength:
+  Max: 100
+  Exclude:
+    - 'spec/**/*'
+
+# Block length exception for specs
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - 'spec/**/*'
+
+# Naming conventions
+Naming/MethodParameterName:
+  MinNameLength: 1  # Allow single letter variables for mathematical formulas
+
+# Prefer compact module/class definitions
+Style/ClassAndModuleChildren:
+  Enabled: true
+  EnforcedStyle: nested
+
+# Discourage usage of globals
+Style/GlobalVars:
+  Enabled: true
+
+# Allow more descriptive module/class variable names
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+# Use snake_case for variables and methods
+Naming/VariableName:
+  EnforcedStyle: snake_case
+
+Naming/MethodName:
+  EnforcedStyle: snake_case
+
+# Parentheses for method definitions
+Style/DefWithParentheses:
+  Enabled: true
+
+# Method call with or without parentheses
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+
+# Raise exceptions with explicit new
+Style/RaiseArgs:
+  EnforcedStyle: exploded
+
+# Prefer the newer safe navigation operator
+Style/SafeNavigation:
+  Enabled: true
+
+# Trailing commas
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# Prefer %i for symbol arrays
+Style/SymbolArray:
+  EnforcedStyle: percent
+  MinSize: 3
+
+# Prefer %w for word arrays
+Style/WordArray:
+  EnforcedStyle: percent
+  MinSize: 3
+
+# Prefer &&/|| over and/or
+Style/AndOr:
+  EnforcedStyle: always
+
+# Accessibility modifiers should be indented consistently
+Layout/AccessModifierIndentation:
+  EnforcedStyle: indent
+
+# Consistent empty lines
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+
+Layout/EmptyLinesAroundMethodBody:
+  EnforcedStyle: empty_lines
