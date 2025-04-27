@@ -29,6 +29,8 @@ jobs:
 
       - name: Generate documentation
         run: |
+          # Create necessary directories first
+          mkdir -p docs/images
           bundle exec rake doc
           # Create .nojekyll file to allow files and folders that start with an underscore
           touch docs/.nojekyll
