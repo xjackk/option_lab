@@ -6,5 +6,6 @@
 --private
 --embed-mixins
 --asset docs/images:.
+--output-dir docs
 -
 LICENSE.txt

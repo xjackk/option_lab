@@ -9,7 +9,7 @@ gemspec
 gem "numo-narray", "~> 0.9.2"
 gem "numo-linalg", "~> 0.1.7"
 gem "distribution", "~> 0.8.0"
-gem "gnuplot", "~> 2.6.2"
+gem "unicode_plot", "~> 0.0.5"
 gem "holidays", "~> 8.6.0"
 gem "prime"
 gem "bigdecimal"

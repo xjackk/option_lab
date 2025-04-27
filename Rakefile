@@ -23,12 +23,13 @@ end
 
 desc 'Generate documentation using YARD'
 task :doc do
+  sh 'mkdir -p docs/images'
   sh 'yard doc lib/**/*.rb --output-dir docs'
 end
 
 desc 'Clean temporary files and build artifacts'
 task :clean do
-  sh 'rm -rf *.gem *.rbc coverage .rspec docs'
+  sh 'rm -rf *.gem *.rbc coverage .rspec docs doc'
   sh 'rm -rf .bundle vendor Gemfile.lock'
   sh 'rm -rf .yardoc log pkg tmp'
 end

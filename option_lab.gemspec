@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
 
   # Dependencies
   spec.add_dependency 'distribution', '~> 0.8.0' # Statistical distributions
-  spec.add_dependency 'gnuplot', '~> 2.6.2'      # For plotting (similar to matplotlib)
+  spec.add_dependency 'unicode_plot', '~> 0.0.5' # For terminal-based plotting
   spec.add_dependency 'numo-linalg', '~> 0.1.7'  # Linear algebra functions
   spec.add_dependency 'numo-narray', '~> 0.9.2'  # For numerical operations (similar to numpy)
 
