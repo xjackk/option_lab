@@ -3,6 +3,7 @@
 OptionLab is a lightweight Ruby library designed to provide quick evaluation of options trading strategies.
 It aims to be a direct port of the popular Python library - [OptionLab](https://github.com/rgaveiga/optionlab)
 
+***docs page coming soon***
 [![Documentation](https://img.shields.io/badge/docs-YARD-blue.svg)](https://xjackk.github.io/option_lab/)
 
 ## Features
@@ -43,7 +44,6 @@ OptionLab requires:
 - Ruby 3.3.0 or higher
 - numo-narray gem for numerical computations
 - distribution gem for statistical calculations
-- gnuplot gem for visualization
 
 ## Basic Usage
 
@@ -122,15 +122,6 @@ puts outputs
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Disclaimer
-
-This is free software and is provided as is. The author makes no guarantee that its results are accurate and is not responsible for any losses caused by the use of the code.
-
-Options are risky derivatives and, like any other type of financial vehicle, trading options requires due diligence. This code is provided for educational and research purposes only.
-
-# Print the results
-puts outputs
 
 # Plot the profit/loss diagram
 OptionLab.plot_pl(outputs)
