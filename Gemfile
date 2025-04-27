@@ -22,4 +22,5 @@ group :development do
   gem "rubocop-shopify", require: false
   gem "solargraph", "~> 0.49.0"
   gem "yard", "~> 0.9.34"
+  gem "redcarpet", "~> 3.6.1" # Markdown processor for YARD
 end

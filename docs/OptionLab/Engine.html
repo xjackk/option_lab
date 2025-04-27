@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OptionLab::Engine
+  
+    &mdash; OptionLab Documentation
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OptionLab::Engine";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (E)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../OptionLab.html" title="OptionLab (module)">OptionLab</a></span></span>
+     &raquo; 
+    <span class="title">Engine</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OptionLab::Engine
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/option_lab/engine.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#_generate_outputs-class_method" title="_generate_outputs (class method)">.<strong>_generate_outputs</strong>(data)  &#x21d2; Models::Outputs </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Generate outputs from engine data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#_init_inputs-class_method" title="_init_inputs (class method)">.<strong>_init_inputs</strong>(inputs)  &#x21d2; Models::EngineData </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Initialize input data.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#_run-class_method" title="_run (class method)">.<strong>_run</strong>(data)  &#x21d2; Models::EngineData </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Run calculations.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#_run_closed_position_calcs-class_method" title="_run_closed_position_calcs (class method)">.<strong>_run_closed_position_calcs</strong>(data, i)  &#x21d2; Models::EngineData </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Run closed position calculations.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#_run_option_calcs-class_method" title="_run_option_calcs (class method)">.<strong>_run_option_calcs</strong>(data, i)  &#x21d2; Models::EngineData </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Run option calculations.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#_run_stock_calcs-class_method" title="_run_stock_calcs (class method)">.<strong>_run_stock_calcs</strong>(data, i)  &#x21d2; Models::EngineData </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Run stock calculations.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#run_strategy-class_method" title="run_strategy (class method)">.<strong>run_strategy</strong>(inputs_data)  &#x21d2; Models::Outputs </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Run strategy calculation.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="_generate_outputs-class_method">
+  
+    .<strong>_generate_outputs</strong>(data)  &#x21d2; <tt><span class='object_link'><a href="Models/Outputs.html" title="OptionLab::Models::Outputs (class)">Models::Outputs</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Generate outputs from engine data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/Outputs.html" title="OptionLab::Models::Outputs (class)">Models::Outputs</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Strategy outputs</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 464</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__generate_outputs'>_generate_outputs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+<span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/Outputs.html" title="OptionLab::Models::Outputs (class)">Outputs</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Models/Outputs.html#initialize-instance_method" title="OptionLab::Models::Outputs#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+  <span class='label'>inputs:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='comma'>,</span>
+  <span class='label'>data:</span> <span class='id identifier rubyid_data'>data</span><span class='comma'>,</span>
+  <span class='label'>probability_of_profit:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_probability'>profit_probability</span><span class='comma'>,</span>
+  <span class='label'>expected_profit:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_expected_profit'>expected_profit</span><span class='comma'>,</span>
+  <span class='label'>expected_loss:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_expected_loss'>expected_loss</span><span class='comma'>,</span>
+  <span class='label'>strategy_cost:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='period'>.</span><span class='id identifier rubyid_sum'>sum</span><span class='comma'>,</span>
+  <span class='label'>per_leg_cost:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='comma'>,</span>
+  <span class='label'>profit_ranges:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_ranges'>profit_ranges</span><span class='comma'>,</span>
+  <span class='label'>minimum_return_in_the_domain:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span><span class='period'>.</span><span class='id identifier rubyid_min'>min</span><span class='comma'>,</span>
+  <span class='label'>maximum_return_in_the_domain:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span><span class='period'>.</span><span class='id identifier rubyid_max'>max</span><span class='comma'>,</span>
+  <span class='label'>implied_volatility:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_implied_volatility'>implied_volatility</span><span class='comma'>,</span>
+  <span class='label'>in_the_money_probability:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_itm_probability'>itm_probability</span><span class='comma'>,</span>
+  <span class='label'>delta:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delta'>delta</span><span class='comma'>,</span>
+  <span class='label'>gamma:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_gamma'>gamma</span><span class='comma'>,</span>
+  <span class='label'>theta:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_theta'>theta</span><span class='comma'>,</span>
+  <span class='label'>vega:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vega'>vega</span><span class='comma'>,</span>
+  <span class='label'>rho:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_rho'>rho</span><span class='comma'>,</span>
+  <span class='label'>probability_of_profit_target:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_target_probability'>profit_target_probability</span><span class='comma'>,</span>
+  <span class='label'>probability_of_loss_limit:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit_probability'>loss_limit_probability</span><span class='comma'>,</span>
+  <span class='label'>profit_target_ranges:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_target_ranges'>profit_target_ranges</span><span class='comma'>,</span>
+  <span class='label'>loss_limit_ranges:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit_ranges'>loss_limit_ranges</span><span class='comma'>,</span>
+<span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="_init_inputs-class_method">
+  
+    .<strong>_init_inputs</strong>(inputs)  &#x21d2; <tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Initialize input data</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>inputs</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/Inputs.html" title="OptionLab::Models::Inputs (class)">Models::Inputs</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Input data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Initialized engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__init_inputs'>_init_inputs</span><span class='lparen'>(</span><span class='id identifier rubyid_inputs'>inputs</span><span class='rparen'>)</span>
+  <span class='comment'># Create engine data
+</span>  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">EngineData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Models/EngineData.html#initialize-instance_method" title="OptionLab::Models::EngineData#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+    <span class='label'>stock_price_array:</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create_price_seq'><span class='object_link'><a href="Support.html#create_price_seq-class_method" title="OptionLab::Support.create_price_seq (method)">create_price_seq</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_min_stock'>min_stock</span><span class='comma'>,</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_max_stock'>max_stock</span><span class='rparen'>)</span><span class='comma'>,</span>
+    <span class='label'>terminal_stock_prices:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_array'>array</span> <span class='op'>:</span> <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='period'>.</span><span class='id identifier rubyid_init_empty_array'><span class='object_link'><a href="Models.html#init_empty_array-class_method" title="OptionLab::Models.init_empty_array (method)">init_empty_array</a></span></span><span class='comma'>,</span>
+    <span class='label'>inputs:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+
+  <span class='comment'># Set days in year
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_in_year'>days_in_year</span> <span class='op'>=</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_discard_nonbusiness_days'>discard_nonbusiness_days</span> <span class='op'>?</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_business_days_in_year'>business_days_in_year</span> <span class='op'>:</span> <span class='int'>365</span>
+
+  <span class='comment'># Calculate days to target
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_start_date'>start_date</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_target_date'>target_date</span>
+    <span class='id identifier rubyid_n_discarded_days'>n_discarded_days</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_discard_nonbusiness_days'>discard_nonbusiness_days</span>
+      <span class='const'><span class='object_link'><a href="Utils.html" title="OptionLab::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_nonbusiness_days'><span class='object_link'><a href="Utils.html#get_nonbusiness_days-class_method" title="OptionLab::Utils.get_nonbusiness_days (method)">get_nonbusiness_days</a></span></span><span class='lparen'>(</span>
+        <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_start_date'>start_date</span><span class='comma'>,</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_target_date'>target_date</span><span class='comma'>,</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_country'>country</span>
+      <span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='int'>0</span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_target_date'>target_date</span> <span class='op'>-</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_start_date'>start_date</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>+</span> <span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_n_discarded_days'>n_discarded_days</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span> <span class='op'>=</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target_date'>days_to_target_date</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Process each strategy leg
+</span>  <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_strategy'>strategy</span><span class='comma'>,</span> <span class='id identifier rubyid__i'>_i</span><span class='op'>|</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span>
+
+    <span class='kw'>case</span> <span class='id identifier rubyid_strategy'>strategy</span>
+    <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/Option.html" title="OptionLab::Models::Option (class)">Option</a></span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_prev_pos'>prev_pos</span> <span class='op'>||</span> <span class='float'>0.0</span>
+
+      <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_use_bs'>use_bs</span> <span class='op'>&lt;&lt;</span> <span class='kw'>false</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Date</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_start_date'>start_date</span>
+        <span class='id identifier rubyid_n_discarded_days'>n_discarded_days</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_discard_nonbusiness_days'>discard_nonbusiness_days</span>
+          <span class='const'><span class='object_link'><a href="Utils.html" title="OptionLab::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_nonbusiness_days'><span class='object_link'><a href="Utils.html#get_nonbusiness_days-class_method" title="OptionLab::Utils.get_nonbusiness_days (method)">get_nonbusiness_days</a></span></span><span class='lparen'>(</span>
+            <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_start_date'>start_date</span><span class='comma'>,</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span><span class='comma'>,</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_country'>country</span>
+          <span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='int'>0</span>
+        <span class='kw'>end</span>
+
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span> <span class='op'>-</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_start_date'>start_date</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span> <span class='op'>+</span> <span class='int'>1</span> <span class='op'>-</span> <span class='id identifier rubyid_n_discarded_days'>n_discarded_days</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_use_bs'>use_bs</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span> <span class='op'>!=</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_target_date'>target_date</span><span class='rparen'>)</span>
+      <span class='kw'>elsif</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Integer</span><span class='rparen'>)</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span> <span class='op'>&gt;=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span>
+          <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span>
+          <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_use_bs'>use_bs</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_expiration'>expiration</span> <span class='op'>!=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+          <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Days remaining to maturity must be greater than or equal to the number of days remaining to the target date!</span><span class='tstring_end'>&#39;</span></span>
+        <span class='kw'>end</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Expiration must be a date, an int, or nil.</span><span class='tstring_end'>&#39;</span></span>
+      <span class='kw'>end</span>
+
+    <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/Stock.html" title="OptionLab::Models::Stock (class)">Stock</a></span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_prev_pos'>prev_pos</span> <span class='op'>||</span> <span class='float'>0.0</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_use_bs'>use_bs</span> <span class='op'>&lt;&lt;</span> <span class='kw'>false</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span> <span class='op'>&lt;&lt;</span> <span class='op'>-</span><span class='int'>1</span>
+
+    <span class='kw'>when</span> <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/ClosedPosition.html" title="OptionLab::Models::ClosedPosition (class)">ClosedPosition</a></span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_strategy'>strategy</span><span class='period'>.</span><span class='id identifier rubyid_prev_pos'>prev_pos</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span> <span class='op'>&lt;&lt;</span> <span class='int'>0</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>n/a</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_use_bs'>use_bs</span> <span class='op'>&lt;&lt;</span> <span class='kw'>false</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span> <span class='op'>&lt;&lt;</span> <span class='op'>-</span><span class='int'>1</span>
+
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Type must be &#39;call&#39;, &#39;put&#39;, &#39;stock&#39; or &#39;closed&#39;!</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="_run-class_method">
+  
+    .<strong>_run</strong>(data)  &#x21d2; <tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Run calculations</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Updated engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 144</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__run'>_run</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_inputs'>inputs</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span>
+
+  <span class='comment'># Calculate time to target
+</span>  <span class='id identifier rubyid_time_to_target'>time_to_target</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_in_year'>days_in_year</span>
+
+  <span class='comment'># Initialize arrays
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span> <span class='op'>=</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='float'>0.0</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span> <span class='op'>=</span> <span class='const'>Numo</span><span class='op'>::</span><span class='const'>DFloat</span><span class='period'>.</span><span class='id identifier rubyid_zeros'>zeros</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span> <span class='op'>=</span> <span class='const'>Numo</span><span class='op'>::</span><span class='const'>DFloat</span><span class='period'>.</span><span class='id identifier rubyid_zeros'>zeros</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span> <span class='op'>=</span> <span class='const'>Numo</span><span class='op'>::</span><span class='const'>DFloat</span><span class='period'>.</span><span class='id identifier rubyid_zeros'>zeros</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_terminal_stock_prices'>terminal_stock_prices</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit_mc'>strategy_profit_mc</span> <span class='op'>=</span> <span class='const'>Numo</span><span class='op'>::</span><span class='const'>DFloat</span><span class='period'>.</span><span class='id identifier rubyid_zeros'>zeros</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_terminal_stock_prices'>terminal_stock_prices</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Process each strategy leg
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='op'>|</span>
+    <span class='kw'>case</span> <span class='id identifier rubyid_type'>type</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>call</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>put</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid__run_option_calcs'>_run_option_calcs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>stock</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid__run_stock_calcs'>_run_stock_calcs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>closed</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid__run_closed_position_calcs'>_run_closed_position_calcs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+
+    <span class='comment'># Add to strategy profit
+</span>    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span> <span class='op'>+=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit_mc'>strategy_profit_mc</span> <span class='op'>+=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Calculate probability of profit
+</span>  <span class='id identifier rubyid_pop_inputs'>pop_inputs</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+    <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/ArrayInputs.html" title="OptionLab::Models::ArrayInputs (class)">ArrayInputs</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Models/ArrayInputs.html#initialize-instance_method" title="OptionLab::Models::ArrayInputs#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+      <span class='label'>array:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit_mc'>strategy_profit_mc</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/BlackScholesModelInputs.html" title="OptionLab::Models::BlackScholesModelInputs (class)">BlackScholesModelInputs</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Models/BlackScholesModelInputs.html#initialize-instance_method" title="OptionLab::Models::BlackScholesModelInputs#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+      <span class='label'>stock_price:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_price'>stock_price</span><span class='comma'>,</span>
+      <span class='label'>volatility:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_volatility'>volatility</span><span class='comma'>,</span>
+      <span class='label'>years_to_target_date:</span> <span class='id identifier rubyid_time_to_target'>time_to_target</span><span class='comma'>,</span>
+      <span class='label'>interest_rate:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_interest_rate'>interest_rate</span><span class='comma'>,</span>
+      <span class='label'>dividend_yield:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_dividend_yield'>dividend_yield</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_pop_out'>pop_out</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pop'><span class='object_link'><a href="Support.html#get_pop-class_method" title="OptionLab::Support.get_pop (method)">get_pop</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span><span class='comma'>,</span> <span class='id identifier rubyid_pop_inputs'>pop_inputs</span><span class='rparen'>)</span>
+
+  <span class='comment'># Store results
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_probability'>profit_probability</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out'>pop_out</span><span class='period'>.</span><span class='id identifier rubyid_probability_of_reaching_target'>probability_of_reaching_target</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_expected_profit'>expected_profit</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out'>pop_out</span><span class='period'>.</span><span class='id identifier rubyid_expected_return_above_target'>expected_return_above_target</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_expected_loss'>expected_loss</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out'>pop_out</span><span class='period'>.</span><span class='id identifier rubyid_expected_return_below_target'>expected_return_below_target</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_ranges'>profit_ranges</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out'>pop_out</span><span class='period'>.</span><span class='id identifier rubyid_reaching_target_range'>reaching_target_range</span>
+
+  <span class='comment'># Calculate profit target probability if needed
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_profit_target'>profit_target</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_profit_target'>profit_target</span> <span class='op'>&gt;</span> <span class='float'>0.01</span>
+    <span class='id identifier rubyid_pop_out_prof_targ'>pop_out_prof_targ</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pop'><span class='object_link'><a href="Support.html#get_pop-class_method" title="OptionLab::Support.get_pop (method)">get_pop</a></span></span><span class='lparen'>(</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_pop_inputs'>pop_inputs</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_profit_target'>profit_target</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_target_probability'>profit_target_probability</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out_prof_targ'>pop_out_prof_targ</span><span class='period'>.</span><span class='id identifier rubyid_probability_of_reaching_target'>probability_of_reaching_target</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_target_ranges'>profit_target_ranges</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out_prof_targ'>pop_out_prof_targ</span><span class='period'>.</span><span class='id identifier rubyid_reaching_target_range'>reaching_target_range</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Calculate loss limit probability if needed
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit'>loss_limit</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit'>loss_limit</span> <span class='op'>&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_pop_out_loss_lim'>pop_out_loss_lim</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pop'><span class='object_link'><a href="Support.html#get_pop-class_method" title="OptionLab::Support.get_pop (method)">get_pop</a></span></span><span class='lparen'>(</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strategy_profit'>strategy_profit</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_pop_inputs'>pop_inputs</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit'>loss_limit</span> <span class='op'>+</span> <span class='float'>0.01</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit_probability'>loss_limit_probability</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out_loss_lim'>pop_out_loss_lim</span><span class='period'>.</span><span class='id identifier rubyid_probability_of_missing_target'>probability_of_missing_target</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_loss_limit_ranges'>loss_limit_ranges</span> <span class='op'>=</span> <span class='id identifier rubyid_pop_out_loss_lim'>pop_out_loss_lim</span><span class='period'>.</span><span class='id identifier rubyid_missing_target_range'>missing_target_range</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="_run_closed_position_calcs-class_method">
+  
+    .<strong>_run_closed_position_calcs</strong>(data, i)  &#x21d2; <tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Run closed position calculations</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Engine data</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>i</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Index of strategy leg</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Updated engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 440</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__run_closed_position_calcs'>_run_closed_position_calcs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='rparen'>)</span>
+  <span class='comment'># Set metrics
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_implied_volatility'>implied_volatility</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_itm_probability'>itm_probability</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delta'>delta</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vega'>vega</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_rho'>rho</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_theta'>theta</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+
+  <span class='comment'># Set cost and profit
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="_run_option_calcs-class_method">
+  
+    .<strong>_run_option_calcs</strong>(data, i)  &#x21d2; <tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Run option calculations</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Engine data</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>i</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Index of strategy leg</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Updated engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 235</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__run_option_calcs'>_run_option_calcs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_inputs'>inputs</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span>
+  <span class='id identifier rubyid_action'>action</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_type'>type</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&lt;</span> <span class='float'>0.0</span>
+    <span class='comment'># Previous position is closed
+</span>    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_implied_volatility'>implied_volatility</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_itm_probability'>itm_probability</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delta'>delta</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vega'>vega</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_theta'>theta</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_rho'>rho</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+
+    <span class='id identifier rubyid_cost'>cost</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>+</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_cost'>cost</span> <span class='op'>*=</span> <span class='op'>-</span><span class='float'>1.0</span> <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&#39;</span></span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cost'>cost</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_cost'>cost</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_cost'>cost</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>return</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Calculate option metrics
+</span>  <span class='id identifier rubyid_time_to_maturity'>time_to_maturity</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_in_year'>days_in_year</span>
+
+  <span class='id identifier rubyid_bs'>bs</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="BlackScholes.html" title="OptionLab::BlackScholes (module)">BlackScholes</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_bs_info'><span class='object_link'><a href="BlackScholes.html#get_bs_info-class_method" title="OptionLab::BlackScholes.get_bs_info (method)">get_bs_info</a></span></span><span class='lparen'>(</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_price'>stock_price</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_interest_rate'>interest_rate</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_volatility'>volatility</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_time_to_maturity'>time_to_maturity</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_dividend_yield'>dividend_yield</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+
+  <span class='comment'># Store Greeks
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_gamma'>gamma</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vega'>vega</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_vega'>vega</span>
+
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_implied_volatility'>implied_volatility</span> <span class='op'>&lt;&lt;</span> <span class='const'><span class='object_link'><a href="BlackScholes.html" title="OptionLab::BlackScholes (module)">BlackScholes</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_implied_vol'><span class='object_link'><a href="BlackScholes.html#get_implied_vol-class_method" title="OptionLab::BlackScholes.get_implied_vol (method)">get_implied_vol</a></span></span><span class='lparen'>(</span>
+    <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_price'>stock_price</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_interest_rate'>interest_rate</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_time_to_maturity'>time_to_maturity</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_dividend_yield'>dividend_yield</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+
+  <span class='comment'># Set multiplier for buy/sell
+</span>  <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='op'>-</span><span class='int'>1</span>
+
+  <span class='comment'># Store type-specific metrics
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_type'>type</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>call</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_itm_probability'>itm_probability</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_call_itm_prob'>call_itm_prob</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delta'>delta</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_call_delta'>call_delta</span> <span class='op'>*</span> <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_theta'>theta</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_call_theta'>call_theta</span> <span class='op'>/</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_in_year'>days_in_year</span> <span class='op'>*</span> <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_rho'>rho</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_call_rho'>call_rho</span> <span class='op'>*</span> <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_itm_probability'>itm_probability</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_put_itm_prob'>put_itm_prob</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delta'>delta</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_put_delta'>put_delta</span> <span class='op'>*</span> <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_theta'>theta</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_put_theta'>put_theta</span> <span class='op'>/</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_in_year'>days_in_year</span> <span class='op'>*</span> <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_rho'>rho</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_bs'>bs</span><span class='period'>.</span><span class='id identifier rubyid_put_rho'>put_rho</span> <span class='op'>*</span> <span class='id identifier rubyid_negative_multiplier'>negative_multiplier</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Use previous position premium if available
+</span>  <span class='id identifier rubyid_opt_value'>opt_value</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&gt;</span> <span class='float'>0.0</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>:</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_premium'>premium</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+
+  <span class='comment'># Calculate profit/loss profile
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_use_bs'>use_bs</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_target_to_maturity'>target_to_maturity</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_maturity'>days_to_maturity</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>-</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_to_target'>days_to_target</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_f'>to_f</span> <span class='op'>/</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_days_in_year'>days_in_year</span>
+
+    <span class='id identifier rubyid_profit'>profit</span><span class='comma'>,</span> <span class='id identifier rubyid_cost'>cost</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pl_profile_bs'><span class='object_link'><a href="Support.html#get_pl_profile_bs-class_method" title="OptionLab::Support.get_pl_profile_bs (method)">get_pl_profile_bs</a></span></span><span class='lparen'>(</span>
+      <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_opt_value'>opt_value</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_interest_rate'>interest_rate</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_target_to_maturity'>target_to_maturity</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_volatility'>volatility</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_dividend_yield'>dividend_yield</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_opt_commission'>opt_commission</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_profit'>profit</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cost'>cost</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pl_profile_bs'><span class='object_link'><a href="Support.html#get_pl_profile_bs-class_method" title="OptionLab::Support.get_pl_profile_bs (method)">get_pl_profile_bs</a></span></span><span class='lparen'>(</span>
+        <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_opt_value'>opt_value</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_interest_rate'>interest_rate</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_target_to_maturity'>target_to_maturity</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_volatility'>volatility</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_terminal_stock_prices'>terminal_stock_prices</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_dividend_yield'>dividend_yield</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_opt_commission'>opt_commission</span><span class='comma'>,</span>
+      <span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_profit'>profit</span><span class='comma'>,</span> <span class='id identifier rubyid_cost'>cost</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pl_profile'><span class='object_link'><a href="Support.html#get_pl_profile-class_method" title="OptionLab::Support.get_pl_profile (method)">get_pl_profile</a></span></span><span class='lparen'>(</span>
+      <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_opt_value'>opt_value</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_opt_commission'>opt_commission</span><span class='comma'>,</span>
+    <span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_profit'>profit</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cost'>cost</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pl_profile'><span class='object_link'><a href="Support.html#get_pl_profile-class_method" title="OptionLab::Support.get_pl_profile (method)">get_pl_profile</a></span></span><span class='lparen'>(</span>
+        <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_strike'>strike</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_opt_value'>opt_value</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_terminal_stock_prices'>terminal_stock_prices</span><span class='comma'>,</span>
+        <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_opt_commission'>opt_commission</span><span class='comma'>,</span>
+      <span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="_run_stock_calcs-class_method">
+  
+    .<strong>_run_stock_calcs</strong>(data, i)  &#x21d2; <tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Run stock calculations</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Engine data</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>i</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Index of strategy leg</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/EngineData.html" title="OptionLab::Models::EngineData (class)">Models::EngineData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Updated engine data</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 378</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid__run_stock_calcs'>_run_stock_calcs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='comma'>,</span> <span class='id identifier rubyid_i'>i</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_inputs'>inputs</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span>
+  <span class='id identifier rubyid_action'>action</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+
+  <span class='comment'># Set delta based on action
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delta'>delta</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='float'>1.0</span> <span class='op'>:</span> <span class='op'>-</span><span class='float'>1.0</span><span class='rparen'>)</span>
+
+  <span class='comment'># Set other metrics
+</span>  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_itm_probability'>itm_probability</span> <span class='op'>&lt;&lt;</span> <span class='float'>1.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_implied_volatility'>implied_volatility</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_gamma'>gamma</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_vega'>vega</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_rho'>rho</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_theta'>theta</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&lt;</span> <span class='float'>0.0</span>
+    <span class='comment'># Previous position is closed
+</span>    <span class='id identifier rubyid_costtmp'>costtmp</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_price'>stock_price</span> <span class='op'>+</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>*</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_costtmp'>costtmp</span> <span class='op'>*=</span> <span class='op'>-</span><span class='float'>1.0</span> <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_action'>action</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&#39;</span></span>
+
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_costtmp'>costtmp</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_costtmp'>costtmp</span>
+
+    <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_costtmp'>costtmp</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>return</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Use previous position if available
+</span>  <span class='id identifier rubyid_stockpos'>stockpos</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>&gt;</span> <span class='float'>0.0</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_previous_position'>previous_position</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>:</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_price'>stock_price</span>
+
+  <span class='comment'># Calculate profit/loss profile
+</span>  <span class='id identifier rubyid_profit'>profit</span><span class='comma'>,</span> <span class='id identifier rubyid_cost'>cost</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pl_profile_stock'><span class='object_link'><a href="Support.html#get_pl_profile_stock-class_method" title="OptionLab::Support.get_pl_profile_stock (method)">get_pl_profile_stock</a></span></span><span class='lparen'>(</span>
+    <span class='id identifier rubyid_stockpos'>stockpos</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_stock_price_array'>stock_price_array</span><span class='comma'>,</span>
+    <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_commission'>stock_commission</span><span class='comma'>,</span>
+  <span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit'>profit</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_profit'>profit</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_cost'>cost</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_cost'>cost</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_model'>model</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>array</span><span class='tstring_end'>&#39;</span></span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_profit_mc'>profit_mc</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='comma'>,</span> <span class='kw'>true</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Support.html" title="OptionLab::Support (module)">Support</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get_pl_profile_stock'><span class='object_link'><a href="Support.html#get_pl_profile_stock-class_method" title="OptionLab::Support.get_pl_profile_stock (method)">get_pl_profile_stock</a></span></span><span class='lparen'>(</span>
+      <span class='id identifier rubyid_stockpos'>stockpos</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_action'>action</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_n'>n</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_terminal_stock_prices'>terminal_stock_prices</span><span class='comma'>,</span>
+      <span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_stock_commission'>stock_commission</span><span class='comma'>,</span>
+    <span class='rparen'>)</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_data'>data</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="run_strategy-class_method">
+  
+    .<strong>run_strategy</strong>(inputs_data)  &#x21d2; <tt><span class='object_link'><a href="Models/Outputs.html" title="OptionLab::Models::Outputs (class)">Models::Outputs</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Run strategy calculation</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>inputs_data</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>, <tt><span class='object_link'><a href="Models/Inputs.html" title="OptionLab::Models::Inputs (class)">Models::Inputs</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Input data for strategy calculation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/Outputs.html" title="OptionLab::Models::Outputs (class)">Models::Outputs</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>Output data from strategy calculation</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/option_lab/engine.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_run_strategy'>run_strategy</span><span class='lparen'>(</span><span class='id identifier rubyid_inputs_data'>inputs_data</span><span class='rparen'>)</span>
+  <span class='comment'># Ensure inputs_data is not nil
+</span>  <span class='id identifier rubyid_inputs_data'>inputs_data</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  
+  <span class='comment'># Ensure strategy is present
+</span>  <span class='kw'>if</span> <span class='id identifier rubyid_inputs_data'>inputs_data</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Hash</span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_inputs_data'>inputs_data</span><span class='lbracket'>[</span><span class='symbol'>:strategy</span><span class='rbracket'>]</span>
+    <span class='comment'># Create a default call option
+</span>    <span class='id identifier rubyid_inputs_data'>inputs_data</span><span class='lbracket'>[</span><span class='symbol'>:strategy</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='lbracket'>[</span>
+      <span class='lbrace'>{</span> 
+        <span class='label'>type:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>call</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+        <span class='label'>strike:</span> <span class='float'>110.0</span><span class='comma'>,</span>
+        <span class='label'>premium:</span> <span class='float'>5.0</span><span class='comma'>,</span> 
+        <span class='label'>n:</span> <span class='int'>1</span><span class='comma'>,</span>
+        <span class='label'>action:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>buy</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+        <span class='label'>expiration:</span> <span class='const'>Date</span><span class='period'>.</span><span class='id identifier rubyid_today'>today</span> <span class='op'>+</span> <span class='int'>30</span>
+      <span class='rbrace'>}</span>
+    <span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  
+  <span class='comment'># Convert hash to Inputs if needed
+</span>  <span class='id identifier rubyid_inputs'>inputs</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_inputs_data'>inputs_data</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/Inputs.html" title="OptionLab::Models::Inputs (class)">Inputs</a></span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_inputs_data'>inputs_data</span>
+  <span class='kw'>else</span>
+    <span class='const'><span class='object_link'><a href="Models.html" title="OptionLab::Models (module)">Models</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Models/Inputs.html" title="OptionLab::Models::Inputs (class)">Inputs</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Models/Inputs.html#initialize-instance_method" title="OptionLab::Models::Inputs#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_inputs_data'>inputs_data</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='comment'># Initialize data
+</span>  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid__init_inputs'>_init_inputs</span><span class='lparen'>(</span><span class='id identifier rubyid_inputs'>inputs</span><span class='rparen'>)</span>
+
+  <span class='comment'># Run calculations
+</span>  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid__run'>_run</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+
+  <span class='comment'># Generate outputs
+</span>  <span class='id identifier rubyid__generate_outputs'>_generate_outputs</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Apr 27 02:08:10 2025 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.37 (ruby-3.3.3).
+</div>
+
+    </div>
+  </body>
+</html>

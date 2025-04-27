@@ -1,0 +1,10 @@
+--markup markdown
+--markup-provider redcarpet
+--title 'OptionLab Documentation'
+--readme README.md
+--protected
+--private
+--embed-mixins
+--asset docs/images:.
+-
+LICENSE.txt

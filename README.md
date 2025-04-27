@@ -3,6 +3,8 @@
 OptionLab is a lightweight Ruby library designed to provide quick evaluation of options trading strategies.
 It aims to be a direct port of the popular Python library - [OptionLab](https://github.com/rgaveiga/optionlab)
 
+[![Documentation](https://img.shields.io/badge/docs-YARD-blue.svg)](https://xjackk.github.io/option_lab/)
+
 ## Features
 
 - Calculate profit/loss profiles for options strategies
