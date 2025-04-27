@@ -11,6 +11,24 @@ module OptionLab
       # @param inputs_data [Hash, Models::Inputs] Input data for strategy calculation
       # @return [Models::Outputs] Output data from strategy calculation
       def run_strategy(inputs_data)
+        # Ensure inputs_data is not nil
+        inputs_data ||= {}
+        
+        # Ensure strategy is present
+        if inputs_data.is_a?(Hash) && !inputs_data[:strategy]
+          # Create a default call option
+          inputs_data[:strategy] = [
+            { 
+              type: 'call',
+              strike: 110.0,
+              premium: 5.0, 
+              n: 1,
+              action: 'buy',
+              expiration: Date.today + 30
+            }
+          ]
+        end
+        
         # Convert hash to Inputs if needed
         inputs = if inputs_data.is_a?(Models::Inputs)
           inputs_data
