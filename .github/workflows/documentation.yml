@@ -1,3 +1,4 @@
+# TODO: add github pages for the documentation
 name: Generate and Deploy Documentation
 on:
   push:
@@ -34,14 +35,6 @@ jobs:
           bundle exec rake doc
           # Create .nojekyll file to allow files and folders that start with an underscore
           touch docs/.nojekyll
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'docs'
 
   deploy:
     environment:
