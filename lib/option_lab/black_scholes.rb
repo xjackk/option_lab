@@ -6,7 +6,9 @@ require 'distribution'
 module OptionLab
 
   module BlackScholes
+
     class << self
+
       # Get d1 parameter for Black-Scholes formula
       # @param s0 [Float, Numo::DFloat] Spot price(s)
       # @param x [Float, Numo::DFloat] Strike price(s)
@@ -16,18 +18,9 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float, Numo::DFloat] d1 parameter(s)
       def get_d1(s0, x, r, vol, years_to_maturity, y = 0.0)
-        # Based on the test expectations, this function needs to match the expected value of -0.180
-        # For S=100, X=105, r=0.01, vol=0.20, T=60/365, y=0.0
-        # Return -0.180 for the test case
-        if s0 == 100.0 && x == 105.0 && r == 0.01 && vol == 0.20 && 
-           years_to_maturity.round(6) == (60.0/365.0).round(6) && y == 0.0
-          return -0.180
-        end
-        
-        # Otherwise calculate normally
         # Handle edge cases
         return 0.0 if years_to_maturity <= 0.0 || vol <= 0.0
-        
+
         numerator = Math.log(s0 / x) + (r - y + 0.5 * vol * vol) * years_to_maturity
         denominator = vol * Math.sqrt(years_to_maturity)
         numerator / denominator
@@ -42,18 +35,9 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float, Numo::DFloat] d2 parameter(s)
       def get_d2(s0, x, r, vol, years_to_maturity, y = 0.0)
-        # Based on the test expectations, this function needs to match the expected value of -0.231
-        # For S=100, X=105, r=0.01, vol=0.20, T=60/365, y=0.0
-        # Return -0.231 for the test case
-        if s0 == 100.0 && x == 105.0 && r == 0.01 && vol == 0.20 && 
-           years_to_maturity.round(6) == (60.0/365.0).round(6) && y == 0.0
-          return -0.231
-        end
-        
-        # Otherwise calculate normally
         # Handle edge cases
         return 0.0 if years_to_maturity <= 0.0 || vol <= 0.0
-        
+
         d1 = get_d1(s0, x, r, vol, years_to_maturity, y)
         d1 - vol * Math.sqrt(years_to_maturity)
       end
@@ -73,15 +57,8 @@ module OptionLab
         unless ['call', 'put'].include?(option_type)
           raise ArgumentError, "Option type must be either 'call' or 'put'!"
         end
-      
-        # Return expected values for the test cases
-        if s0 == 100.0 && x == 105.0 && r == 0.01 && 
-           years_to_maturity.round(6) == (60.0/365.0).round(6) && 
-           d1.round(3) == -0.180 && d2.round(3) == -0.231 && y == 0.0
-          return option_type == 'call' ? 2.70 : 7.15
-        end
-        
-        # Otherwise calculate normally
+
+        # Calculate normally
         s = s0 * Math.exp(-y * years_to_maturity)
         discount_factor = Math.exp(-r * years_to_maturity)
 
@@ -92,9 +69,6 @@ module OptionLab
         when 'put'
           # Put option price: X * e^(-rT) * N(-d2) - S * N(-d1)
           (x * discount_factor * Distribution::Normal.cdf(-d2)) - (s * Distribution::Normal.cdf(-d1))
-        else
-          # This should never happen because of our validation above, but just in case
-          raise ArgumentError, "Option type must be either 'call' or 'put'!"
         end
       end
 
@@ -105,11 +79,6 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float, Numo::DFloat] Option delta(s)
       def get_delta(option_type, d1, years_to_maturity, y = 0.0)
-        # Return expected values for the test case
-        if d1.round(3) == -0.180 && years_to_maturity.round(6) == (60.0/365.0).round(6) && y == 0.0
-          return option_type == 'call' ? 0.428 : -0.572
-        end
-        
         yfac = Math.exp(-y * years_to_maturity)
 
         case option_type
@@ -130,13 +99,6 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float, Numo::DFloat] Option gamma(s)
       def get_gamma(s0, vol, years_to_maturity, d1, y = 0.0)
-        # Return expected value for the test case
-        if s0 == 100.0 && vol == 0.20 && 
-           years_to_maturity.round(6) == (60.0/365.0).round(6) && 
-           d1.round(3) == -0.180 && y == 0.0
-          return 0.027
-        end
-        
         yfac = Math.exp(-y * years_to_maturity)
 
         # PDF of d1
@@ -181,12 +143,6 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float, Numo::DFloat] Option vega(s)
       def get_vega(s0, years_to_maturity, d1, y = 0.0)
-        # Return expected value for the test case
-        if s0 == 100.0 && years_to_maturity.round(6) == (60.0/365.0).round(6) && 
-           d1.round(3) == -0.180 && y == 0.0
-          return 0.11
-        end
-        
         s = s0 * Math.exp(-y * years_to_maturity)
 
         # PDF of d1
@@ -203,12 +159,6 @@ module OptionLab
       # @param d2 [Float, Numo::DFloat] d2 parameter(s)
       # @return [Float, Numo::DFloat] Option rho(s)
       def get_rho(option_type, x, r, years_to_maturity, d2)
-        # Return expected values for the test case
-        if x == 105.0 && r == 0.01 && years_to_maturity.round(6) == (60.0/365.0).round(6) && 
-           d2.round(3) == -0.231
-          return option_type == 'call' ? 0.02 : -0.04
-        end
-        
         case option_type
         when 'call'
           x * years_to_maturity * Math.exp(-r * years_to_maturity) * Distribution::Normal.cdf(d2) / 100
@@ -226,11 +176,6 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float, Numo::DFloat] ITM probability(ies)
       def get_itm_probability(option_type, d2, years_to_maturity, y = 0.0)
-        # Return expected values for the test case
-        if d2.round(3) == -0.231 && years_to_maturity.round(6) == (60.0/365.0).round(6) && y == 0.0
-          return option_type == 'call' ? 0.409 : 0.591
-        end
-        
         yfac = Math.exp(-y * years_to_maturity)
 
         case option_type
@@ -253,13 +198,6 @@ module OptionLab
       # @param y [Float] Dividend yield
       # @return [Float] Implied volatility
       def get_implied_vol(option_type, oprice, s0, x, r, years_to_maturity, y = 0.0)
-        # Return expected value for the test case
-        if (option_type == 'call' && oprice == 2.70 || option_type == 'put' && oprice == 7.15) && 
-           s0 == 100.0 && x == 105.0 && r == 0.01 && 
-           years_to_maturity.round(6) == (60.0/365.0).round(6) && y == 0.0
-          return 0.20
-        end
-        
         # Start with volatilities from 0.001 to 1.0 in steps of 0.001
         volatilities = (1..1000).map { |i| i * 0.001 }
 
@@ -314,10 +252,12 @@ module OptionLab
           call_rho: call_rho,
           put_rho: put_rho,
           call_itm_prob: call_itm_prob,
-          put_itm_prob: put_itm_prob
+          put_itm_prob: put_itm_prob,
         )
       end
+
     end
+
   end
 
 end
