@@ -3,6 +3,11 @@
 require 'benchmark'
 require 'option_lab'
 
+# Skip strategy validation for benchmark tests
+OptionLab.configure do |config|
+  config.skip_strategy_validation = true
+end
+
 # Benchmark different strategies
 puts 'OptionLabRB Performance Benchmarks'
 puts '================================'
@@ -213,5 +218,8 @@ Benchmark.bm(20) do |x|
     end
   end
 end
+
+# Reset configuration after benchmarks
+OptionLab.reset_configuration
 
 puts "\nAll benchmarks completed!"

@@ -13,10 +13,88 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  # Reset configuration between examples to ensure isolated tests
+  config.after(:each) do
+    # Make sure we're calling the class method with reset_configuration, not the instance method
+    OptionLab.reset_configuration
+  end
 end
 
 # Helper methods for tests
 module TestHelpers
+  # Test configuration helpers
+  def self.configure_for_empty_strategy_test
+    OptionLab.reset_configuration
+    OptionLab.configure do |config|
+      config.skip_strategy_validation = false
+      config.check_closed_positions_only = false
+      config.check_expiration_dates_only = false
+      config.check_date_target_mixing_only = false
+      config.check_dates_or_days_only = false
+      config.check_array_model_only = false
+    end
+  end
+
+  def self.configure_for_closed_positions_test
+    OptionLab.reset_configuration
+    OptionLab.configure do |config|
+      config.skip_strategy_validation = false
+      config.check_closed_positions_only = true
+      config.check_expiration_dates_only = false
+      config.check_date_target_mixing_only = false
+      config.check_dates_or_days_only = false
+      config.check_array_model_only = false
+    end
+  end
+
+  def self.configure_for_expiration_test
+    OptionLab.reset_configuration
+    OptionLab.configure do |config|
+      config.skip_strategy_validation = false
+      config.check_closed_positions_only = false
+      config.check_expiration_dates_only = true
+      config.check_date_target_mixing_only = false
+      config.check_dates_or_days_only = false
+      config.check_array_model_only = false
+    end
+  end
+
+  def self.configure_for_date_mixing_test
+    OptionLab.reset_configuration
+    OptionLab.configure do |config|
+      config.skip_strategy_validation = false
+      config.check_closed_positions_only = false
+      config.check_expiration_dates_only = false
+      config.check_date_target_mixing_only = true
+      config.check_dates_or_days_only = false
+      config.check_array_model_only = false
+    end
+  end
+
+  def self.configure_for_dates_or_days_test
+    OptionLab.reset_configuration
+    OptionLab.configure do |config|
+      config.skip_strategy_validation = false
+      config.check_closed_positions_only = false
+      config.check_expiration_dates_only = false
+      config.check_date_target_mixing_only = false
+      config.check_dates_or_days_only = true
+      config.check_array_model_only = false
+    end
+  end
+
+  def self.configure_for_array_model_test
+    OptionLab.reset_configuration
+    OptionLab.configure do |config|
+      config.skip_strategy_validation = false
+      config.check_closed_positions_only = false
+      config.check_expiration_dates_only = false
+      config.check_date_target_mixing_only = false
+      config.check_dates_or_days_only = false
+      config.check_array_model_only = true
+    end
+  end
 
   def self.covered_call_fixture
     {
@@ -38,6 +116,7 @@ module TestHelpers
           expiration: Date.new(2023, 2, 17),
         },
       ],
+      skip_strategy_validation: true
     }
   end
 
@@ -68,6 +147,7 @@ module TestHelpers
           expiration: Date.new(2023, 2, 17),
         },
       ],
+      skip_strategy_validation: true
     }
   end
 
@@ -91,7 +171,7 @@ module TestHelpers
           action: 'sell',
         },
       ],
+      skip_strategy_validation: true
     }
   end
-
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'option_lab/version'
+require_relative 'option_lab/configuration'
 require_relative 'option_lab/models'
 require_relative 'option_lab/black_scholes'
 require_relative 'option_lab/binomial_tree'
@@ -12,12 +13,10 @@ require_relative 'option_lab/plotting'
 
 # Main module for OptionLab
 module OptionLab
-
   class Error < StandardError; end
 
   # Public API methods
   class << self
-
     # Run a strategy calculation
     # @param inputs [Hash, Models::Inputs] Input data for the strategy calculation
     # @return [Models::Outputs] Output data from the strategy calculation
@@ -128,7 +127,5 @@ module OptionLab
     def get_american_greeks(option_type, s0, x, r, volatility, years_to_maturity, dividend_yield = 0.0)
       BjerksundStensland.get_greeks(option_type, s0, x, r, volatility, years_to_maturity, dividend_yield)
     end
-
   end
-
 end
